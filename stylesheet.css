@@ -1,0 +1,200 @@
+/*Sashimiblade.com - Alexander Freas */
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	height: 100%;
+	font-family: Georgia;
+	font-size: 18px;
+	color: #696969;
+}
+
+a:link {
+	color: #696969;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #EEAE1F;
+}
+
+a:visited {
+	color: #000000;
+}
+
+.wrapper {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.main {
+	height: 100%;
+	width: 100%;
+}
+
+.main section .page_container {
+	position: relative;
+	top: 8%;
+	max-width: 100%;
+	z-index: 3;
+	border: 2px solid blue;
+	height: 700px;
+	overflow: hidden;
+}
+
+.main section {
+	overflow: hidden;
+}
+
+.main .content {
+	width: 800px;
+	border: 2px solid black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*PAGE 0 - SPLASHPAGE*/
+.main section.page0 {
+	background-color: gray;
+	background-image: url('page0bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top-left;
+	height: 100%;
+}
+
+.main section.page0 .content {
+	margin-top: 15%;
+}
+
+.main section.page0 .content h1{
+	font-family: Impact;
+	color: #000000;
+	letter-spacing: 12px;
+	font-size: 70px;
+}
+
+/*PAGE 1 - ABOUT*/
+.main section.page1 {
+	background-color: gray;
+	background-image: url('lightorangebg.jpg');
+/*	background-size: cover;*/
+	background-repeat: repeat;
+	background-position: top-left;
+	height: 100%;
+}
+
+.main section.page1 .content {
+	margin-left: 5%;
+	background-color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	height: 100%;
+}
+
+.main section.page1 .content h1 {
+	font-family: Impact;
+	color: #000000;
+	font-size: 45px;
+	letter-spacing: 2px;
+	margin-top: 0;
+
+}
+
+.main section.page1 .content p {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+/*PAGE 2 - PROJECTS*/
+.main section.page2 {
+	background-image: url('greyzz.png');
+	background-repeat: repeat;
+	background-position: top-left;
+	height: 100%;
+}
+
+.main section.page2 .content {
+	width: 1200px;
+	height: 600px;
+}
+
+.main section.page2 .content .grid {
+	width: 450px;
+	height: 450px;
+	border: 1px solid red;
+	margin-top: 5%;
+	margin-bottom: 10%;
+	margin-left: 5%;
+	position: fixed;
+}
+
+.main section.page2 .content .grid div {
+	width: 150px;
+	height: 150px;
+	outline: 1px solid blue;
+	float: left;
+}
+
+.main section.page2 .content .projects {
+	height: 400px;
+	width: 500px;
+	border: 1px solid red;
+	float: right;
+	margin-top: 5%;
+	margin-right: 5%;
+}
+
+.main section.page2 .content h1 {
+	font-family: Impact;
+	font-size: 40px;
+	color: #000000;
+	letter-spacing: 2px;
+}
+
+/*PAGE 3 - CONNECT*/
+.main section.page3 {
+	background-image: url('lightbluebg3.jpg');
+	background-repeat: repeat;
+	background-position: top-left;
+	height: 100%;
+}
+
+.main section.page3 .content {
+	height: 100%;
+	background: #ffffff;
+}
+
+.main section.page3 .content .contact {
+	border: 1px solid red;
+	float: left;
+	text-align: left;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+
+.main section.page3 .content .social {
+	border: 1px solid red;
+	float: right;
+	margin-right: 15%;
+	margin-top: 5%;
+}
+
+.main section.page3 .content h1 {
+	font-family: Impact;
+	font-size: 40px;
+	color: #000000;
+	letter-spacing: 2px;
+}
+
+
+
+
+

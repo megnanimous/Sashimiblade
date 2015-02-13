@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+<title>Sashimiblade - Alex Freas</title>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+	<link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+	<link href='style.css' rel='stylesheet' type='text/css'>
+	<link href='animate.css' rel='stylesheet' type='text/css'>
+	<script>
+	  $(document).ready(function(){
+	  	  $(".projects_detail").each(function(index){
+	  	  		if (index > 0) {
+	  	  			$(this).css("display", "none");
+	  	  		}
+	  	  });
+	      $(".main").onepage_scroll({
+	   		sectionContainer: "section",
+	   		easing: "ease",
+	   		animationTime: 500,
+	   		pagination: true,
+	   		updateURL: false,
+	      });
+	      $(".clickable").click(function() {
+	      	$(".projects_detail").each(function(index){
+	      		$(this).css("display", "none");
+	      	})
+	      	description_string = "#" + $(this).attr('id') + "_description"
+	      	description_obj = $(description_string);
+	      	description_obj.css("display", "block");
+	      })
+	});
+	</script>
+
+</head>
+<body>
+		<div class="main">
+		<section class="page0">
+			<div class="page_container">
+				<div class="content">
+					<h1>Sashimiblade</h1>
+					<p>about - work - contact</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="page1">
+			<div class="page_container">
+				<div class="content">
+					<img src="portrait_large.jpg" height="300" width="300" alt="Portrait">
+					<br>
+					<h1>Hi, I'm Alex.</h1>
+					<p>I am a Berlin-based developer, specializing in clean and ____ code.</p>
+					<p>After growing up in Chicago, and spending a few years in</p>
+					<p>Washinton, DC, I decided to follow my dream of living abroad.</p>
+					<p>Currently I work for <a href="http://wwww.komoot.de" target="_blank">Komoot</a>, churning out iOS code that helps you explore the world.</p>
+					<p>When I'm not in front of my computer, I am an aspiring master chef and world traveler.</p>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="page2">
+			<div class="page_container">
+				<div class="content">
+					<h1>PROJECTS</h1>
+					<div class="grid">
+						<div class="clickable" id="komoot"><a href="#" id="link_1">Komoot</a></div>
+						<div>2</div>
+						<div class="clickable" id="bebrave"><a href="#" id="link_2">#BeBrave</a></div>
+						<div>4</div>
+						<div class="clickable" id="hapto"><a href="#" id="link_3">Hapto</a></div>
+						<div>6</div>
+						<div class="clickable" id="legacy"><a href="#" id="link_4">Legacy</a></div>
+						<div>7</div>
+						<div class="clickable" id="yumlist"><a href="#" id="link_5">Yumlist</a></div>
+					</div>
+					<div class="projects" id="description">
+						<div class="projects_detail" id="demo_description">Blah blah blah.</div>
+						<div class="projects_detail" id="komoot_description">Blah blah blah.</div>
+						<div class="projects_detail" id="bebrave_description">Poop.</div>
+					</div>
+				</div>
+				<p>View my Resume</p>
+			</div>
+		</section>
+
+		<section class="page3">
+			<div class="page_container">
+				<div class="content">
+					<h1>CONNECT</h1>
+					<div class="contact">
+						<p>Alexander Freas</p>
+						<p>akfreas@gmail.com</p>
+						<p>
+						<form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+						Name:<br>
+						<input type="text" name="name" value="your name"><br>
+						E-mail:<br>
+						<input type="text" name="mail" value="your email"><br>
+						Message:<br>
+						<textarea rows="15" cols="50">Your message</textarea><br><br>
+						<input type="submit" value="Send">
+						<input type="reset" value="Reset">
+						</form>
+						</p>
+					</div>
+					<div class="social">
+						<img src="akf_github.png" height="100" width="100" alt="github"><br><br>
+						<img src="akf_twitter.png" height="100" width="100" alt="twitter"><br><br>
+						<img src="akf_stackoverflow.png" height="100" width="100" alt="stackoverflow"><br><br>
+						<img src="akf_linkedin.png" height="100" width="100" alt="linkin">
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+</body>
+</html>
