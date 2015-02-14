@@ -167,16 +167,16 @@ a:visited {
 	width: 450px;
 	height: 450px;
 	/*border: 1px solid red;*/
-	margin-top: 4%;
+	margin-top:6%;
 	margin-bottom: 10%;
-	margin-left: 5%;
+	margin-left: 4%;
 	position: fixed;
 }
 
 .main section.page2 .content .grid div {
 	width: 150px;
 	height: 150px;
-	outline: 1px solid blue;
+/*	outline: 1px solid blue;*/
 	float: left;
 }
 
@@ -195,6 +195,22 @@ a:visited {
 	color: #000000;
 	letter-spacing: 2px;
 	padding-top: 25px;
+}
+
+.main section.page2 .content .projects_detail h2 {
+	font-family: Impact;
+	color: #696969;
+	font-size: 22px;
+}
+
+.main section.page2 .content .projects_detail ul {
+	list-style-type: circle;
+	text-align: left;
+	margin-top: 15px;
+}
+
+.main section.page2 .content .projects_detail li {
+	margin-bottom: 20px;
 }
 
 /*PAGE 3 - CONNECT*/
