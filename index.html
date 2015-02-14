@@ -23,6 +23,9 @@
 	   		pagination: true,
 	   		updateURL: false,
 	      });
+	      $('#menu a').click(function() {
+		   $(".main").moveTo($(this).data('index'));
+			});
 	      $(".clickable").click(function() {
 	      	$(".projects_detail").each(function(index){
 	      		$(this).css("display", "none");
@@ -39,9 +42,15 @@
 		<div class="main">
 		<section class="page0">
 			<div class="page_container">
+				<div class="transparency">
+				</div>
 				<div class="content">
 					<h1>Sashimiblade</h1>
-					<p>about - work - contact</p>
+					<ul id="menu">
+						<li><a href="#1" data-index="2">about</a></li>
+						<li><a href="#2" data-index="3">projects</a></li>
+						<li><a href="#3" data-index="4">connect</a></li>
+					</ul>
 				</div>
 			</div>
 		</section>
@@ -78,12 +87,22 @@
 						<div class="clickable" id="yumlist"><a href="#" id="link_5">Yumlist</a></div>
 					</div>
 					<div class="projects" id="description">
-						<div class="projects_detail" id="demo_description">Blah blah blah.</div>
-						<div class="projects_detail" id="komoot_description">Blah blah blah.</div>
+						<div class="projects_detail" id="default_description">Click on the icons to learn more.</div>
+						<div class="projects_detail" id="komoot_description">
+							<h2>Komoot</h2>
+							<ul>
+								<li>The #1 outdoors app in Germany, Austria, and Switzerland</li>
+								<li>Helps users discover new places to hike, bike, and even unicycle!</li>
+								<li>Provides turn-by-turn navigation</li>
+							</ul>
+						</div>
 						<div class="projects_detail" id="bebrave_description">Poop.</div>
+						<div class="projects_detail" id="hapto_description">Hapto.</div>
+						<div class="projects_detail" id="legacy_description">Legacy.</div>
+						<div class="projects_detail" id="yumlist_description">Yumlist.</div>
 					</div>
 				</div>
-				<p>View my Resume</p>
+				<p><a href="http://sashimiblade.com.s3.amazonaws.com/resume.pdf" target="_blank">View my Resume&#769;</a></p>
 			</div>
 		</section>
 
@@ -92,8 +111,10 @@
 				<div class="content">
 					<h1>CONNECT</h1>
 					<div class="contact">
-						<p>Alexander Freas</p>
-						<p>akfreas@gmail.com</p>
+						<p>Alexander Freas
+						<br><a href="mailto:akfreas@gmail.com">akfreas@gmail.com</a>
+						<br><a href="http://www.twitter.com/sashimiblade" target="_blank">@sashimiblade</a></p>
+						<br>
 						<p>
 						<form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
 						Name:<br>
@@ -108,10 +129,10 @@
 						</p>
 					</div>
 					<div class="social">
-						<img src="akf_github.png" height="100" width="100" alt="github"><br><br>
-						<img src="akf_twitter.png" height="100" width="100" alt="twitter"><br><br>
-						<img src="akf_stackoverflow.png" height="100" width="100" alt="stackoverflow"><br><br>
-						<img src="akf_linkedin.png" height="100" width="100" alt="linkin">
+						<a href="https://github.com/akfreas" target="_blank"><img src="akf_github.png" height="100" width="100" alt="github"></a><br><br>
+						<a href="http://www.twitter.com/sashimiblade" target="_blank"><img src="akf_twitter.png" height="100" width="100" alt="twitter"></a><br><br>
+						<a href="http://stackoverflow.com/users/362853/sashimiblade" target="_blank"><img src="akf_stackoverflow.png" height="100" width="100" alt="stackoverflow"></a><br><br>
+						<a href="https://www.linkedin.com/pub/alexander-freas/1b/106/165" target="_blank"><img src="akf_linkedin.png" height="100" width="100" alt="linkin"></a>
 					</div>
 				</div>
 			</div>
