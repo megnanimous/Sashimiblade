@@ -62,7 +62,7 @@ a:visited {
 /*PAGE 0 - SPLASHPAGE*/
 .main section.page0 {
 	background-color: gray;
-	background-image: url('page0bg.jpg');
+	background-image: url('allee2_bg.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top-left;
@@ -71,15 +71,15 @@ a:visited {
 
 .main section.page0 .transparency {
 	background-color: #ffffff;
-	opacity: 0.5;
+	opacity: 0.4;
 	width: 100%;
 	height: 300px;
-	margin-top: 10%;
+	margin-top: 13%;
 	position: absolute;
 }
 
 .main section.page0 .content {
-	margin-top: 10%;
+	margin-top: 13%;
 	margin-left: 25%;
 	margin-right: 25%;
 	position: absolute;
@@ -111,7 +111,7 @@ a:visited {
 /*PAGE 1 - ABOUT*/
 .main section.page1 {
 	background-color: gray;
-	background-image: url('lightorangebg.jpg');
+	background-image: url('grey_sandbag.png');
 /*	background-size: cover;*/
 	background-repeat: repeat;
 	background-position: top-left;
@@ -143,7 +143,7 @@ a:visited {
 
 /*PAGE 2 - PROJECTS*/
 .main section.page2 {
-	background-image: url('grey_sandbag.png');
+	background-image: url('lightorangebg.jpg');
 	background-repeat: repeat;
 	background-position: top-left;
 	height: 100%;

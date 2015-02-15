@@ -1,41 +1,44 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-<title>Sashimiblade - Alex Freas</title>
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<script type="text/javascript" src="jquery.onepage-scroll.js"></script>
-	<link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
-	<link href='style.css' rel='stylesheet' type='text/css'>
-	<link href='animate.css' rel='stylesheet' type='text/css'>
-	<script>
-	  $(document).ready(function(){
-	  	  $(".projects_detail").each(function(index){
-	  	  		if (index > 0) {
-	  	  			$(this).css("display", "none");
-	  	  		}
-	  	  });
-	      $(".main").onepage_scroll({
-	   		sectionContainer: "section",
-	   		easing: "ease",
-	   		animationTime: 500,
-	   		pagination: true,
-	   		updateURL: false,
-	      });
-	      $('#menu a').click(function() {
-		   $(".main").moveTo($(this).data('index'));
-			});
-	      $(".clickable").click(function() {
-	      	$(".projects_detail").each(function(index){
-	      		$(this).css("display", "none");
-	      	})
-	      	description_string = "#" + $(this).attr('id') + "_description"
-	      	description_obj = $(description_string);
-	      	description_obj.css("display", "block");
-	      })
-	});
-	</script>
+	<title>Sashimiblade | Alex Freas</title>
+	<meta name="title" content="Sashimibade | Alex Freas">
+	<meta name="description" content="Sashimiblade.com by Alexander Freas">
+	<meta charset="UTF-8">
+	<meta name="author" content="Alexander Freas">
+	<link type="text/css" rel="stylesheet" href="stylesheet.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+		<link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+		<link href='style.css' rel='stylesheet' type='text/css'>
+		<link href='animate.css' rel='stylesheet' type='text/css'>
+		<script>
+		  $(document).ready(function(){
+		  	  $(".projects_detail").each(function(index){
+		  	  		if (index > 0) {
+		  	  			$(this).css("display", "none");
+		  	  		}
+		  	  });
+		      $(".main").onepage_scroll({
+		   		sectionContainer: "section",
+		   		easing: "ease",
+		   		animationTime: 500,
+		   		pagination: true,
+		   		updateURL: false,
+		      });
+		      $('#menu a').click(function() {
+			   $(".main").moveTo($(this).data('index'));
+				});
+		      $(".clickable").click(function() {
+		      	$(".projects_detail").each(function(index){
+		      		$(this).css("display", "none");
+		      	})
+		      	description_string = "#" + $(this).attr('id') + "_description"
+		      	description_obj = $(description_string);
+		      	description_obj.css("display", "block");
+		      })
+		});
+		</script>
 
 </head>
 <body>
@@ -45,7 +48,7 @@
 				<div class="transparency">
 				</div>
 				<div class="content">
-					<h1>Sashimiblade</h1>
+					<h1>Alexander Freas</h1>
 					<ul id="menu">
 						<li><a href="#1" data-index="2">about</a></li>
 						<li><a href="#2" data-index="3">projects</a></li>
