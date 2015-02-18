@@ -111,9 +111,9 @@ a:visited {
 /*PAGE 1 - ABOUT*/
 .main section.page1 {
 	background-color: gray;
-	background-image: url('grey_sandbag.png');
-/*	background-size: cover;*/
-	background-repeat: repeat;
+	background-image: url('wallbg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: top-left;
 	height: 100%;
 }
@@ -143,8 +143,9 @@ a:visited {
 
 /*PAGE 2 - PROJECTS*/
 .main section.page2 {
-	background-image: url('lightorangebg.jpg');
-	background-repeat: repeat;
+	background-image: url('lakebg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: top-left;
 	height: 100%;
 }
@@ -215,8 +216,9 @@ a:visited {
 
 /*PAGE 3 - CONNECT*/
 .main section.page3 {
-	background-image: url('lightbluebg3.jpg');
-	background-repeat: repeat;
+	background-image: url('treebg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: top-left;
 	height: 100%;
 }
